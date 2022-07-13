@@ -1,0 +1,58 @@
+
+/* main {
+    display: row;
+    flex-direction: column;
+} */
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fcontainer {
+    display: flex;
+    align-items: flex-start;  
+}
+
+.fcontainer2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.fitem1 {
+    display: flex;
+    background-color: blue;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    min-width: 200px;
+    justify-content:space-around;
+    margin-top: 0;
+}
+  
+.fitem2 {
+    display: flex;
+    background-color: brown;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    flex: 2 1 200px;
+}
+
+.fitem3 {
+    background-color: pink;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    flex: 2 1 200px;
+}
+
+div > p {
+    margin-top: 0;
+    background-color: aquamarine;
+}
+/* .grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12 1rf);
+}  */
+
+
+
