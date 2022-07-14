@@ -1,8 +1,10 @@
-
-/* main {
-    display: row;
-    flex-direction: column;
-} */
+body {
+    background-color: #110011;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='1' y1='0' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23F40' /%3E%3Cstop offset='1' stop-color='%23F40' stop-opacity='0' /%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='1' y1='0' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23d81632' /%3E%3Cstop offset='1' stop-color='%23d81632' stop-opacity='0'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' x1='1' y1='0' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23a60040' /%3E%3Cstop offset='1' stop-color='%23a60040' stop-opacity='0'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' x1='1' y1='0' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23700d3e' /%3E%3Cstop offset='1' stop-color='%23700d3e' stop-opacity='0'/%3E%3C/linearGradient%3E%3ClinearGradient id='e' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%233b102d'/%3E%3Cstop offset='1' stop-color='%23110011'/%3E%3C/linearGradient%3E%3Cg id='l'%3E%3Cpath fill='none' stroke-width='3' stroke-linecap='round' d='M0 0l-900-900' /%3E%3Ccircle fill='%23FFF' stroke='none' cx='0' cy='0' r='1.5'/%3E%3C/g%3E%3Cg id='L1'%3E%3Cuse href='%23l' x='755' y='254'/%3E%3Cuse href='%23l' x='735' y='166'/%3E%3Cuse href='%23l' x='645' y='303'/%3E%3Cuse href='%23l' x='525' y='503'/%3E%3Cuse href='%23l' x='501' y='253'/%3E%3Cuse href='%23l' x='445' y='303'/%3E%3Cuse href='%23l' x='350' y='225'/%3E%3Cuse href='%23l' x='305' y='931'/%3E%3Cuse href='%23l' x='301' y='398'/%3E%3Cuse href='%23l' x='253' y='750'/%3E%3Cuse href='%23l' x='226' y='550'/%3E%3C/g%3E%3C/defs%3E%3Crect fill='url(%23e)' width='2000' height='1500'/%3E%3Cg stroke='url(%23d)'%3E%3Cuse href='%23L1' x='999' y='-55'/%3E%3Cuse href='%23L1' x='555' y='325'/%3E%3Cuse href='%23L1' x='333' y='555'/%3E%3Cuse href='%23L1' x='-55' y='888'/%3E%3C/g%3E%3Cg stroke='url(%23c)'%3E%3Cuse href='%23L1' x='9' y='333'/%3E%3Cuse href='%23L1' x='333' y='3'/%3E%3Cuse href='%23L1' x='222' y='155'/%3E%3Cuse href='%23L1' x='477'/%3E%3Cuse href='%23L1' x='888' y='-222'/%3E%3C/g%3E%3Cg stroke='url(%23b)'%3E%3Cuse href='%23L1' x='-99' y='165'/%3E%3Cuse href='%23L1' x='-66' y='-145'/%3E%3Cuse href='%23L1' x='145' y='-145'/%3E%3Cuse href='%23L1' x='1' y='222'/%3E%3Cuse href='%23L1' x='726' y='-445'/%3E%3C/g%3E%3Cg stroke='url(%23a)'%3E%3Cuse href='%23L1' x='-312' y='-299'/%3E%3Cuse href='%23L1' x='-278' y='-439'/%3E%3Cuse href='%23L1' x='-277' y='-99'/%3E%3Cuse href='%23L1' x='-244' y='-119'/%3E%3Cuse href='%23L1' x='-166' y='-242'/%3E%3Cuse href='%23L1' x='-166' y='-215'/%3E%3Cuse href='%23L1' x='-99' y='-245'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+    text-align: center;
+}
 
 header {
     display: flex;
@@ -12,42 +14,96 @@ header {
     align-items: center;
 }
 
+p {
+    text-align: justify;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.content {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+}
+
+.flex-tag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    min-height: 100%;
+    
+}
+
 .fcontainer {
     display: flex;
+    
     align-items: flex-start;  
+    max-width: 1500px;
 }
 
 .fcontainer2 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1500px;
 }
 
-.fitem1 {
-    display: flex;
+.flex-small {
+    
     background-color: blue;
     padding: 0 0.5rem 0.5rem 0.5rem;
-    min-width: 200px;
-    justify-content:space-around;
-    margin-top: 0;
+    max-width: 600px;
+    max-height: 250px;
+  
 }
   
-.fitem2 {
-    display: flex;
-    background-color: brown;
-    padding: 0 0.5rem 0.5rem 0.5rem;
-    flex: 2 1 200px;
-}
+
 
 .fitem3 {
+    
     background-color: pink;
     padding: 0 0.5rem 0.5rem 0.5rem;
-    flex: 2 1 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.small {
+    max-width: 600px;
+    max-height: 250px;
 }
 
 div > p {
     margin-top: 0;
     background-color: aquamarine;
 }
+
+section > span {
+    position: relative;
+    outline: 3px solid rgb(217, 160, 231);
+    background-color: rgb(79, 205, 209);
+}
+.snake {
+    bottom: 100px;
+    right: 500px;
+    padding: 20px;
+    justify-content: ;
+}
+
+.contact {
+    display: inline;
+}
+
+
 /* .grid{
     display: grid;
     width: 100%;
